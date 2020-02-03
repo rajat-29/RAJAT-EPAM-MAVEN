@@ -3,11 +3,13 @@ import org.example.chocolate.Choco;
 import org.example.chocolate.Chocolate1;
 import org.example.chocolate.Chocolate2;
 import org.example.chocolate.Chocolate3;
+import org.example.chocolate.Chocolate4;
 
 import org.example.sweets.Sweet;
 import org.example.sweets.Sweet1;
 import org.example.sweets.Sweet2;
 import org.example.sweets.Sweet3;
+import org.example.sweets.Sweet4;
 
 import org.example.gift.Gift;
 
@@ -21,18 +23,22 @@ public class App
         Choco c1 = new Chocolate1("5 Star",100,25);
         Choco c2 = new Chocolate2("Perk",150,30);
         Choco c3 = new Chocolate3("Munch",200,35);
+        Choco c4 = new Chocolate4("Bar One",50,60);
 
         Sweet s1 = new Sweet1("Barfi",200,100);
         Sweet s2 = new Sweet2("Ladoo",300,200);
         Sweet s3 = new Sweet3("Pedha",400,300);
+        Sweet s4 = new Sweet4("Cake",150,500);
 
         Gift g1 = new Gift();
         g1.addChocolatesToList(c1);
         g1.addChocolatesToList(c2);
         g1.addChocolatesToList(c3);
+        g1.addChocolatesToList(c4);
         g1.addSweetsToList(s1);
         g1.addSweetsToList(s2);
         g1.addSweetsToList(s3);
+        g1.addSweetsToList(s4);
 
         System.out.print("Gift items are sorted according to their price set : \n");
         g1.sort();
